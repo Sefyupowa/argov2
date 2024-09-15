@@ -32,7 +32,11 @@ spec:
         ports:
         - containerPort: 5432
         env:
-        - name: POSTGRES_USER
+        - name: PG_USER_PASSWORD
           value: postgres
-        - name: POSTGRES_PASSWORD
+        - name: PG_USER_NAME
           value: postgres
+        - name: PG_DATABASE
+          value: db
+        - name: PG_NETWORK_MASK
+          value: all
