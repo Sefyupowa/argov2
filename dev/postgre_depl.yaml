@@ -27,7 +27,8 @@ spec:
     spec:
       containers:
       - name: postgre-container
-        image: postgres
+        image: quay.io/redhatdemo/openshift-pgsql12-primary:centos7
+        imagePullPolicy: Always
         ports:
         - containerPort: 5432
         env:
